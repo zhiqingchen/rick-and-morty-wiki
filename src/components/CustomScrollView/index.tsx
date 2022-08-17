@@ -105,6 +105,7 @@ const CustomScrollView: CustomScrollViewType = forwardRef((props, ref) => {
       style={style}
       onScroll={handleScroll}
       scrollY
+      scrollEventThrottle={16}
       ref={ref}
       refreshControl={
         <RefreshControl refreshing={refreshing} onRefresh={onPulldownRefresh} />
