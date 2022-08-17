@@ -6,7 +6,7 @@ import React, { useRef, useEffect } from 'react'
 import { Text } from '@tarojs/components'
 import { Animated } from 'react-native'
 
-import '../index.less'
+import './index.less'
 
 const RNSkeleton: React.FC = () => {
   const skeletonAnim = useRef(new Animated.Value(1)).current
