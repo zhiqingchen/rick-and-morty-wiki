@@ -37,6 +37,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           appname: Rick and Morty Wiki
           logo: https://raw.githubusercontent.com/rick-and-morty-wiki/RMwiki-native-shell/0.64.0/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png
+          prerelease: ${{ contains(github.ref, 'beta') }}
       - name: Upload Qr Image
         uses: actions/upload-artifact@v2
         with:
